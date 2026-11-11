@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinearLayout horizontal fel racine: image 0.3 + RelativeLayout 0.7 (el textes).
+     fitsSystemWindows: ykhalli el contenu ma ydkhel ta7t el barre systeme -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/passeport_fond"
+    android:baselineAligned="false"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <!-- Image 3al isar: 0dp w weight=0.3 (couverture bleue mel front lel e5er) -->
+    <ImageView
+        android:id="@+id/iv_tampon_gh"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:layout_weight="0.3"
+        android:background="@drawable/bg_couverture"
+        android:contentDescription="@string/desc_image"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_tampon" />
+
+    <!-- 3al imin: RelativeLayout weight=0.7, kol element m7atet nesbi lel e5er -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:paddingBottom="12dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="4dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/tv_titre_passeport_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/titre_passeport"
+            android:textColor="@color/passeport_texte"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Ligne dorée sous le titre -->
+        <View
+            android:id="@+id/barre_or_gh"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/tv_titre_passeport_gh"
+            android:layout_marginTop="6dp"
+            android:background="@color/passeport_or" />
+
+        <TextView
+            android:id="@+id/tv_nom_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/barre_or_gh"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_champ"
+            android:padding="10dp"
+            android:textColor="@color/passeport_texte"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_age_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nom_gh"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_champ"
+            android:padding="10dp"
+            android:textColor="@color/passeport_texte"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_trajet_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_age_gh"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_champ"
+            android:padding="10dp"
+            android:textColor="@color/passeport_texte"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_motif_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trajet_gh"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_champ"
+            android:padding="10dp"
+            android:textColor="@color/passeport_texte"
+            android:textSize="17sp" />
+
+        <!-- Fel e5er: Approuver (alignParentBottom), Refuser fouqou, w label el décision fouq menhom -->
+        <Button
+            android:id="@+id/btn_approuver_gh"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/tint_approuver"
+            android:text="@string/btn_approuver"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_refuser_gh"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_above="@id/btn_approuver_gh"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#FFC62828"
+            android:text="@string/btn_refuser"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_decision_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_refuser_gh"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/label_decision"
+            android:textColor="@color/passeport_texte"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+</LinearLayout>
