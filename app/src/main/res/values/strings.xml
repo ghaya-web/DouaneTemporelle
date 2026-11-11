@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">DouaneTemporelle</string>
+
+    <!-- strings.xml : nlemou fih les textes mta3 l'application lkol -->
+
+    <string name="titre_formulaire">Douane temporelle</string>
+
+    <!-- ===== Écran 1 : le formulaire (MainActivity) ===== -->
+    <!--el hint hia el placeholder ( ktiba tet7at fl zone de text comme exemple ) -->
+
+    <string name="hint_nom">Nom du voyageur</string>
+    <string name="hint_naissance">Année de naissance (ex : 1990)</string>
+    <string name="hint_destination">Année de destination (ex : 2050)</string>
+    <string name="label_motif_titre">Motif du voyage</string>
+
+    <!-- Les 3 motifs houma les radio buttons. motif_modification nesta3louha bch nvérifiw
+      el condition mta3 nbre premier -->
+    <string name="motif_tourisme">Tourisme</string>
+    <string name="motif_modification">Modification du passé</string>
+    <string name="motif_fuite">Fuite</string>
+    <string name="btn_inspecter">Inspecter le profil</string>
+
+    <!-- hedhouma les messages d'erreur elli yodhhrou  lel user ki ya3mel ghalta fel formulaire.
+         El \' houwa el apostrophe (lazem n7otou \ 9bal) -->
+
+    <string name="err_nom">Veuillez saisir le nom</string>
+    <string name="err_annee">Année invalide</string>
+    <string name="err_ordre">La destination doit être ≥ à l\'année de naissance</string>
+    <string name="err_motif">Choisissez un motif de voyage</string>
+
+    <!-- ===== Écran 2: el passeport (VerificationActivity) ===== -->
+    <string name="titre_passeport">PASSEPORT TEMPOREL</string>
+
+    <!-- %1$s ya3ni texte yet3awedh bel valeur fel code (kima el esm),
+        %1$d tet3awedh b un  entier (kima el age), %2$d tet3awedh bl entier ethéni -->
+    <string name="label_nom">Nom : %1$s</string>
+    <string name="label_age">Âge temporel : %1$d ans</string>
+    <string name="label_trajet">Trajet : %1$d → %2$d</string>
+    <string name="label_motif">Motif : %1$s</string>
+
+    <!-- Textes des deux boutons de décision -->
+
+    <string name="btn_approuver">Approuver le saut temporel</string>
+    <string name="btn_refuser">Refuser (Risque de paradoxe)</string>
+    <string name="desc_image">Tampon du passeport temporel</string>
+
+    <!-- ===== Écran 3 : le verdict (ResultActivity) ===== -->
+    <!-- %1$s tet3awedh  b esm l voyageur -->
+    <string name="msg_approuve">Bon voyage %1$s</string>
+    <string name="msg_refuse">%1$s est en état d\'arrestation temporelle</string>
+    <string name="btn_nouveau">Nouveau voyageur</string>
+</resources>
