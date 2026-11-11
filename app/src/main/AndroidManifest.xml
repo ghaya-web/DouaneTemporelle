@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- El manifest: bch ndeclariw fih les 3 activités Android ya9ra menou chnoua el activités
+     elli mawjoudin  w chkoun loula , ken ma ndeclariwch ya monsieur tetplantaaaa  -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DouaneTemporelle"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DouaneTemporelle">
+
+        <!-- Activité 1 (el formulaire): heya el activité de démarrage
+        7atina exported="true" bech ay app tnajm tlancilna l'ecran ( el launcher mta3 telifoun
+        howa app okhra )
+
+        ken 7atina false el launcher maach ynajm ylancilna el app -->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- Intent filter: MAIN + LAUNCHER ya3ni hethi el activité eli tet7al
+                kif el user yenzel 3al icône mta3 el application -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- hedhi activité 2 , 7atina exported="false" khatr ma tnajm tet3adelha ela ma
+         t3amer el formulaire fel activity 1 -->
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false" />
+
+        <!-- hedhi activité 3 , 7atina exported="false" khatr ma tnajm tet3adelha ela ma tet3ada
+         bl activité 2 verification activity -->
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
