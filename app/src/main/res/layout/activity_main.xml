@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_titre_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/titre_formulaire"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_nom_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/hint_nom"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_annee_naissance_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_naissance"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <EditText
+            android:id="@+id/et_annee_destination_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_destination"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <TextView
+            android:id="@+id/tv_motif_titre_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_motif_titre"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_motif_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_tourisme_gh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/motif_tourisme" />
+
+            <RadioButton
+                android:id="@+id/rb_modification_gh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/motif_modification" />
+
+            <RadioButton
+                android:id="@+id/rb_fuite_gh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/motif_fuite" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_inspecter_gh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/btn_inspecter" />
+    </LinearLayout>
+</ScrollView>
