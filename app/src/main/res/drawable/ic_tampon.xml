@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Emblème doré (fond bleu fourni par bg_couverture) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="120dp"
+    android:viewportWidth="80"
+    android:viewportHeight="120">
+    <path android:fillColor="#00000000"
+        android:strokeColor="#FFFFD54F"
+        android:strokeWidth="4"
+        android:pathData="M40,45m-26,0a26,26 0,1 1,52 0a26,26 0,1 1,-52 0" />
+    <path android:fillColor="#00000000"
+        android:strokeColor="#FFFFD54F"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M40,45L40,28M40,45L52,52" />
+    <path android:fillColor="#FFFFD54F"
+        android:pathData="M10,88h60v8h-60z" />
+    <path android:fillColor="#FFFFD54F"
+        android:pathData="M20,104h40v5h-40z" />
+</vector>
